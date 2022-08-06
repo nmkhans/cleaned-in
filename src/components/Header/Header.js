@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ children }) => {
     const menuItems = () => {
         return (
             <>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="contact">Contact</Link></li>
             </>
         )
     }
@@ -17,9 +17,8 @@ const Header = () => {
         <div className="Header">
             <div className="drawer drawer-end">
                 <input id="cleanedin-drawer" type="checkbox" className="drawer-toggle" />
-
                 <div className="drawer-content flex flex-col">
-                    <div className="w-full navbar bg-base-100">
+                    <div className="w-full navbar bg-base-100 px-20">
                         <div className="flex-1 px-2 mx-2 font-semibold text-xl">
                             {/* <Link to="/">
                                 Cleaned It.
@@ -41,8 +40,9 @@ const Header = () => {
                             </ul>
                         </div>
                     </div>
-
-                    {/* Page Content Content */}
+                    {
+                        children
+                    }
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="cleanedin-drawer" className="drawer-overlay"></label>
@@ -51,7 +51,6 @@ const Header = () => {
                             menuItems()
                         }
                     </ul>
-
                 </div>
             </div>
         </div>
