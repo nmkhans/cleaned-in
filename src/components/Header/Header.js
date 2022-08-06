@@ -20,12 +20,9 @@ const Header = ({ children }) => {
                 <div className="drawer-content flex flex-col">
                     <div className="w-full navbar bg-base-100 px-20">
                         <div className="flex-1 px-2 mx-2 font-semibold text-xl">
-                            {/* <Link to="/">
+                            <Link to="/">
                                 Cleaned It.
-                            </Link> */}
-                            <a >
-                                Cleaned It.
-                            </a>
+                            </Link>
                         </div>
                         <div className="flex-none lg:hidden">
                             <label htmlFor="cleanedin-drawer" className="btn btn-square btn-ghost">
