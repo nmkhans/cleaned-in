@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import PublicRoutes from './routes/PublicRoutes';
 import Header from './components/Header/Header';
+import PublicRoutes from './routes/PublicRoutes';
 
 function App() {
   return (
@@ -10,11 +10,10 @@ function App() {
       <Header>
         <Routes>
           {
-            PublicRoutes.map(route =>
+            PublicRoutes.map(({ path, Element }) =>
               <Route
-                key={route.name}
-                path={route.path}
-                element={<route.Element />}
+                path={path}
+                element={<Element />}
               />)
           }
         </Routes>

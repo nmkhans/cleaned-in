@@ -18,7 +18,7 @@ const Header = ({ children }) => {
             <div className="drawer drawer-end">
                 <input id="cleanedin-drawer" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
-                    <div className="w-full navbar bg-base-100 px-20">
+                    <div className="w-full navbar bg-base-100 px-20 fixed top-0 z-20">
                         <div className="flex-1 px-2 mx-2 font-semibold text-xl">
                             <Link to="/">
                                 Cleaned It.
