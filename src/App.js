@@ -10,8 +10,9 @@ function App() {
       <Header>
         <Routes>
           {
-            PublicRoutes.map(({ path, Element }) =>
+            PublicRoutes.map(({ name, path, Element }) =>
               <Route
+                key={name}
                 path={path}
                 element={<Element />}
               />)
