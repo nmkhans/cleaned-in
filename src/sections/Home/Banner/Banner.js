@@ -18,7 +18,7 @@ const Banner = () => {
                                 <h4 className="text-lg font-normal capitalize mb-2">best quality</h4>
                                 <h2 className="text-4xl font-semibold capitalize mb-3">Professional Cleaning Service</h2>
                                 <p className="text-md mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
-                                <button onClick={() => navigate('/contact')} className="btn btn-primary">Get Started</button>
+                                <button onClick={() => navigate('/contact')} className="btn btn-primary text-white">Get Started</button>
                             </div>
                         </div>
                     </div>

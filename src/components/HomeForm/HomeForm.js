@@ -15,25 +15,25 @@ const HomeForm = () => {
                     <div className="home__form__container mt-5">
                         <form onClick={handleSubmit} className="flex flex-row flex-wrap gap-2">
                             <div className="home__form__inputs">
-                                <input type="text" placeholder="Your Name" className="input input-bordered w-full max-w-xs" />
+                                <input type="text" name="name" placeholder="Your Name" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="home__form__inputs">
-                                <input type="number" placeholder="Your Number" className="input input-bordered w-full max-w-xs" />
+                                <input type="number" name="number" placeholder="Your Number" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="home__form__inputs">
-                                <input type="text" placeholder="Type of cleaing" className="input input-bordered w-full max-w-xs" />
+                                <input type="text" name="type" placeholder="Type of cleaing" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="home__form__inputs">
-                                <input type="text" placeholder="Number of Bedrooms" className="input input-bordered w-full max-w-xs" />
+                                <input type="text" name="numofbed" placeholder="Number of Bedrooms" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="home__form__inputs">
-                                <input type="text" placeholder="Number of Bathrooms" className="input input-bordered w-full max-w-xs" />
+                                <input type="text" name="numofbath" placeholder="Number of Bathrooms" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="home__form__inputs">
-                                <input type="text" placeholder="Frequency of cleaning" className="input input-bordered w-full max-w-xs" />
+                                <input type="text" name="frequency" placeholder="Frequency of cleaning" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="home__form__inputs">
-                                <input type="submit" value="Submit" className="input input-bordered w-full max-w-xs bg-primary text-white mt-5 pointer" />
+                                <input type="submit" value="Submit" className="input input-bordered w-full max-w-xs bg-primary text-white mt-5 cursor-pointer" />
                             </div>
                         </form>
                     </div>
